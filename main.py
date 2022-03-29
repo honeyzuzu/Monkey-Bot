@@ -110,7 +110,7 @@ async def on_message(message):
       if chain[i][-1] in ".!?":
         break
     await message.channel.send(good_sentence)
-  strawberry_words = ["strawberry"]
+  strawberry_words = ["strawberry", "strawberries"]
   strawberry_responses = ["YESS!!!!! :strawberry: :strawberry:", "https://tenor.com/view/monkey-monkey-eating-monkey-eating-strawberries-kardie-gif-gif-22488578", "https://tenor.com/view/tayomaki-monkey-strawberry-sakigifs-gif-22300171", "https://tenor.com/view/sushichaeng-monkey-eating-monkey-gif-20975604"]
   if  any(word in message.content.lower() for word in strawberry_words):
     await message.channel.send(random.choice(strawberry_responses))
